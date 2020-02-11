@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+     
+
+        function  foo (a , b) {
+            var word = "";
+            var ww = '';
+            for (var i = 0; i < b.length; i++) {
+
+                for (var j = 0; j < a.length; j++) {
+
+                    if (a[j] === b[i]) {
+                        delete a[j];
+                    } else {
+                        word += a[j];
+                    }
+                }
+                
+            }
+            return  word;
+            
+        }
+
+        var result = foo("Hello", ["o", "l", "e"]);
+        console.log(result);
+        
+       
+
+    </script>
+</body>
+</html>
